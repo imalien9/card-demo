@@ -121,8 +121,8 @@ export default function Home() {
     color: "#EE6464", 
     cursor:"pointer",
     border:"2px solid",
-    padding:10,
-    fontSize: 60, // 加 px 就要使用字串，這裡 px 可用可不用
+    padding:"10px",
+    fontSize: "60px" // 加 px 就要使用字串，這裡 px 可用可不用
   };
 
   return (
