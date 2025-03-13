@@ -113,7 +113,7 @@ import Card from "../components/Card";
 export default function Home() {
   const [showCard, setShowCard] = useState(false);
 
-  const mStyle = {
+  const mStyle: React.CSSProperties = {
     position: "absolute",
     top:"50%",
     left:"50%",
@@ -122,8 +122,8 @@ export default function Home() {
     cursor:"pointer",
     border:"2px solid",
     padding:"10px",
-    fontSize: "60px" // 加 px 就要使用字串，這裡 px 可用可不用
-  };
+    fontSize: 60, // 加 px 就要使用字串，這裡 px 可用可不用
+  }
 
   return (
     <div style={{ textAlign: "center" }}>
