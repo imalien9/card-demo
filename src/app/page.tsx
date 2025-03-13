@@ -113,10 +113,22 @@ import Card from "../components/Card";
 export default function Home() {
   const [showCard, setShowCard] = useState(false);
 
+  const mStyle = {
+    position: "absolute",
+    top:"50%",
+    left:"50%",
+    transform: 'translate(-50%,-50%)', // 如果不是純數字，就要用字串格式
+    color: "#EE6464", 
+    cursor:"pointer",
+    border:"2px solid",
+    padding:10,
+    fontSize: 60, // 加 px 就要使用字串，這裡 px 可用可不用
+  }
+
   return (
     <div style={{ textAlign: "center" }}>
       {!showCard ? (
-        <button onClick={() => setShowCard(true)}>開啟卡包</button>
+        <button style={mStyle} onClick={() => setShowCard(true)}>開啟卡包</button>
       ) : (
         <Canvas style={{ height: "100vh" }}>
           <ambientLight />
