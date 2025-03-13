@@ -28,6 +28,7 @@ import { useLoader } from "@react-three/fiber";
 export default function Card() {
 //   const texture = useLoader(TextureLoader, "/123.png");
     const textureFront = useLoader(TextureLoader, "/123.png");
+    const textureBack = useLoader(TextureLoader, "/456.jpg");
 
   return (
     // <mesh position={[0, 0, 0]}>
@@ -41,7 +42,7 @@ export default function Card() {
         <meshStandardMaterial attach="material-2" color="gray" />    {/* 頂面 */}
         <meshStandardMaterial attach="material-3" color="gray" /> {/* 底面 */}
         <meshStandardMaterial attach="material-4" map={textureFront} />  {/* 前面 */}
-        <meshStandardMaterial attach="material-5" color="orange" />   {/* 後面 */}
+        <meshStandardMaterial attach="material-5" map={textureBack} />   {/* 後面 */}
     </mesh>
   );
 }
