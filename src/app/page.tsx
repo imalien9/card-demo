@@ -123,7 +123,7 @@ export default function Home() {
     border:"2px solid",
     padding:10,
     fontSize: 60, // 加 px 就要使用字串，這裡 px 可用可不用
-  }
+  };
 
   return (
     <div style={{ textAlign: "center" }}>
